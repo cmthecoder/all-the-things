@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import TalThings from './pages/TalThings/TalThings'
 
 const App = () => {
   const bensThings = [
@@ -62,6 +63,14 @@ const App = () => {
     },
   ]
 
+  const talThings = [
+    {
+      name: 'Pokemon Cards',
+      image: "https://serebii.net/card/base/4.jpg",
+      attributes: ['strong', 'powerful', 'best starter final evolution', 'collector item'],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -77,6 +86,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-tal-things"
+        element={<TalThings things={talThings} />}
       />
     </Routes>
   )
