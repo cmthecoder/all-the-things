@@ -1,82 +1,89 @@
-import { Routes, Route } from 'react-router-dom'
-import ManliestThings from './pages/ManliestThings/ManliestThings'
-import StyledThings from './pages/StyledThings/StyledThings'
-import SillyThings from './pages/SillyThings/SIllyThings'
-import Landing from './pages/Landing/Landing'
-import TalThings from './pages/TalThings/TalThings'
-import JuliansThings from "./pages/JuliansThings/JuliansThings"
+import { Routes, Route } from "react-router-dom";
+import ManliestThings from "./pages/ManliestThings/ManliestThings";
+import StyledThings from "./pages/StyledThings/StyledThings";
+import SillyThings from "./pages/SillyThings/SIllyThings";
+import Landing from "./pages/Landing/Landing";
+import TalThings from "./pages/TalThings/TalThings";
+import JuliansThings from "./pages/JuliansThings/JuliansThings";
 
 const App = () => {
   const bensThings = [
     {
-      name: 'banana',
+      name: "banana",
       image:
-        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        "https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       attributes: [
-        'potassium-rich',
-        'yellow when good',
-        'not a taco',
-        'ring ring ring ring ring ring ring',
+        "potassium-rich",
+        "yellow when good",
+        "not a taco",
+        "ring ring ring ring ring ring ring",
       ],
     },
     {
-      name: 'taco',
+      name: "taco",
       image:
-        'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+        "https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
       attributes: [
-        'yummy in my tummy',
-        'salsas may vary',
-        'definitely a taco',
-        'very edible',
+        "yummy in my tummy",
+        "salsas may vary",
+        "definitely a taco",
+        "very edible",
       ],
     },
     {
-      name: 'linux',
-      image: 'https://i.imgur.com/3BmfSOA.png',
-      attributes: ['not a taco', 'not Windows', 'not macOS', 'Penguins?'],
+      name: "linux",
+      image: "https://i.imgur.com/3BmfSOA.png",
+      attributes: ["not a taco", "not Windows", "not macOS", "Penguins?"],
     },
-  ]
+  ];
 
   const davidsThings = [
     {
-      name: 'waffle',
+      name: "waffle",
       image:
-        'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
-      attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
+        "https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      attributes: ["tasty", "fluffy", "breakfast", "yummy"],
     },
     {
-      name: 'Liam',
-      image: 'https://i.imgur.com/l2qX34X.jpg',
-      attributes: ['fluffy', 'happy', 'sleepy', 'dumb'],
+      name: "Liam",
+      image: "https://i.imgur.com/l2qX34X.jpg",
+      attributes: ["fluffy", "happy", "sleepy", "dumb"],
     },
     {
-      name: 'Poptart®',
-      image: 'https://i.imgur.com/q9zgcaP.jpg',
-      attributes: ['pastry?', 'food?', 'edible?', 'Horrible when toasted!'],
+      name: "Poptart®",
+      image: "https://i.imgur.com/q9zgcaP.jpg",
+      attributes: ["pastry?", "food?", "edible?", "Horrible when toasted!"],
     },
-  ]
+  ];
 
   const huntersThings = [
     {
       name: "energy drinks",
-      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
-  ]
+  ];
 
   const talThings = [
     {
-      name: 'Pokemon Cards',
+      name: "Pokemon Cards",
       image: "https://serebii.net/card/base/4.jpg",
-      attributes: ['strong', 'powerful', 'best starter final evolution', 'collector item'],
-  
+      attributes: [
+        "strong",
+        "powerful",
+        "best starter final evolution",
+        "collector item",
+      ],
+    },
+  ];
+
   const juliansThings = [
     {
       name: "Basketball",
-      image: "",  
+      image: "",
       attributes: ["Point Guard", "Passer", "3 point scorer"],
     },
-  ]
+  ];
 
   return (
     <Routes>
@@ -97,11 +104,13 @@ const App = () => {
       <Route
         path="/the-tal-things"
         element={<TalThings things={talThings} />}
+      />
+      <Route
         path="/the-julians-things"
         element={<JuliansThings things={juliansThings} />}
       />
     </Routes>
-  )
-}
+  );
+};
 
-export default App
+export default App;
