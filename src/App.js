@@ -4,7 +4,6 @@ import StyledThings from "./pages/StyledThings/StyledThings";
 import SillyThings from "./pages/SillyThings/SIllyThings";
 import Landing from "./pages/Landing/Landing";
 import TalThings from "./pages/TalThings/TalThings";
-import JuliansThings from "./pages/JuliansThings/JuliansThings";
 
 const App = () => {
   const bensThings = [
@@ -77,14 +76,6 @@ const App = () => {
     },
   ];
 
-  const juliansThings = [
-    {
-      name: "Basketball",
-      image: "",
-      attributes: ["Point Guard", "Passer", "3 point scorer"],
-    },
-  ];
-
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -104,10 +95,6 @@ const App = () => {
       <Route
         path="/the-tal-things"
         element={<TalThings things={talThings} />}
-      />
-      <Route
-        path="/the-julians-things"
-        element={<JuliansThings things={juliansThings} />}
       />
     </Routes>
   );
