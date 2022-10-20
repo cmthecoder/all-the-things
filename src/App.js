@@ -3,6 +3,8 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import BestThings from './pages/BestThings/BestThings'
+import JuliansThing from "./pages/JuliansThings/JuliansThings"
 import ChrisThings from './pages/ChrisThings/ChrisThings'
 
 const App = () => {
@@ -58,16 +60,32 @@ const App = () => {
   const huntersThings = [
     {
       name: "energy drinks",
-      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
+    },
+  ]
+
+  const mikesThings = [
+    {
+      name: "milk tea",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
+      attributes: ["sweet", "addicting"],
+    },
+  ]
+
+  const juliansThings = [
+    {
+      name: "milk tea",
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
+      attributes: ["sweet", "addicting"],
     },
   ]
 
   const chrisThings = [
     {
       name: "planes",
-      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",  
-      attributes: ["fly high", "fast", "loud", "beautiful"],
+      image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
+      attributes: ["fast", "transportation"],
     },
   ]
 
@@ -88,7 +106,15 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-        path="/the-chris-things"
+        path='/the-best-things'
+        element={<BestThings things={mikesThings} />}
+      />
+        <Route
+        path='/the-julians-things'
+        element={<JuliansThing things={juliansThings} />}
+      />
+      <Route
+        path='/the-chris-things'
         element={<ChrisThings things={chrisThings} />}
       />
     </Routes>
