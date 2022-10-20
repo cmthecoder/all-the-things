@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import TalThings from './pages/TalThings/TalThings'
+import JuliansThings from "./pages/JuliansThings/JuliansThings"
 
 const App = () => {
   const bensThings = [
@@ -68,6 +69,12 @@ const App = () => {
       name: 'Pokemon Cards',
       image: "https://serebii.net/card/base/4.jpg",
       attributes: ['strong', 'powerful', 'best starter final evolution', 'collector item'],
+  
+  const juliansThings = [
+    {
+      name: "Basketball",
+      image: "",  
+      attributes: ["Point Guard", "Passer", "3 point scorer"],
     },
   ]
 
@@ -90,6 +97,8 @@ const App = () => {
       <Route
         path="/the-tal-things"
         element={<TalThings things={talThings} />}
+        path="/the-julians-things"
+        element={<JuliansThings things={juliansThings} />}
       />
     </Routes>
   )
