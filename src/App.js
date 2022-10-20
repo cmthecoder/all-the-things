@@ -3,11 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
-<<<<<<< HEAD
 import BestThings from './pages/BestThings/BestThings'
-=======
-import JuliansThings from "./pages/JuliansThings/JuliansThings"
->>>>>>> main
 
 const App = () => {
   const bensThings = [
@@ -67,19 +63,11 @@ const App = () => {
     },
   ]
 
-<<<<<<< HEAD
   const mikesThings = [
     {
       name: "milk tea",
       image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
       attributes: ["sweet", "addicting"],
-=======
-  const juliansThings = [
-    {
-      name: "Basketball",
-      image: "",  
-      attributes: ["Point Guard", "Passer", "3 point scorer"],
->>>>>>> main
     },
   ]
 
@@ -100,13 +88,8 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-<<<<<<< HEAD
         path='/the-best-things'
         element={<BestThings things={mikesThings} />}
-=======
-        path="/the-julians-things"
-        element={<JuliansThings things={juliansThings} />}
->>>>>>> main
       />
     </Routes>
   )
