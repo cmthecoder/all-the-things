@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 import { Routes, Route } from "react-router-dom";
 import ManliestThings from "./pages/ManliestThings/ManliestThings";
 import StyledThings from "./pages/StyledThings/StyledThings";
 import SillyThings from "./pages/SillyThings/SIllyThings";
 import Landing from "./pages/Landing/Landing";
 import TalThings from "./pages/TalThings/TalThings";
-=======
-import { Routes, Route } from 'react-router-dom'
-import ManliestThings from './pages/ManliestThings/ManliestThings'
-import StyledThings from './pages/StyledThings/StyledThings'
-import SillyThings from './pages/SillyThings/SIllyThings'
-import Landing from './pages/Landing/Landing'
 import BestThings from './pages/BestThings/BestThings'
 import JuliansThing from "./pages/JuliansThings/JuliansThings"
->>>>>>> main
 
 const App = () => {
   const bensThings = [
@@ -73,7 +65,6 @@ const App = () => {
     },
   ];
 
-<<<<<<< HEAD
   const talThings = [
     {
       name: "Pokemon Cards",
@@ -84,7 +75,9 @@ const App = () => {
         "best starter final evolution",
         "collector item",
       ],
-=======
+    }
+  ]
+  
   const mikesThings = [
     {
       name: "milk tea",
@@ -98,7 +91,6 @@ const App = () => {
       name: "milk tea",
       image: "https://imgs.xkcd.com/comics/health_drink_2x.png",
       attributes: ["sweet", "addicting"],
->>>>>>> main
     },
   ];
 
@@ -119,17 +111,16 @@ const App = () => {
         element={<SillyThings things={huntersThings} />}
       />
       <Route
-<<<<<<< HEAD
         path="/the-tal-things"
         element={<TalThings things={talThings} />}
-=======
+        />
+      <Route
         path='/the-best-things'
         element={<BestThings things={mikesThings} />}
       />
         <Route
         path='/the-julians-things'
         element={<JuliansThing things={juliansThings} />}
->>>>>>> main
       />
     </Routes>
   );
